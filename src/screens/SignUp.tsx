@@ -216,7 +216,7 @@ const SignUpScreen = ({ navigation }: any) => {
                         )}
                     </Formik>
                 </View>
-                
+
             </SafeAreaView>
         </ScrollView>
     )
@@ -228,95 +228,132 @@ const styles = StyleSheet.create({
 
     appContainer: {
         flex: 1,
+        backgroundColor: '#f4f7fc',
+        padding: 16,
     },
     formContainer: {
-        margin: 8,
-        padding: 8,
+        margin: 16,
+        padding: 16,
+        borderRadius: 8,
+        backgroundColor: '#ffffff',
+        elevation: 3,
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.1,
+        shadowRadius: 4,
     },
     title: {
         fontSize: 32,
-        fontWeight: '600',
+        fontWeight: 'bold',
         marginBottom: 15,
+        textAlign: 'center',
+        color: '#16213e',
     },
     subTitle: {
-        fontSize: 26,
+        fontSize: 24,
         fontWeight: '600',
-        marginBottom: 2,
+        marginBottom: 8,
+        textAlign: 'center',
+        color: '#5DA3FA',
     },
     description: {
-        color: '#758283',
-        marginBottom: 8,
+        color: '#748a9d',
+        marginBottom: 12,
+        textAlign: 'center',
+        fontSize: 14,
     },
     heading: {
         fontSize: 15,
+        fontWeight: '500',
+        color: '#333',
+        marginBottom: 4,
     },
     inputWrapper: {
-        marginBottom: 15,
+        marginBottom: 20,
         alignItems: 'center',
-        justifyContent: 'space-between',
-        flexDirection: 'row',
+        flexDirection: 'column',
     },
     inputColumn: {
         flexDirection: 'column',
+        alignItems: 'flex-start',
+        width: '100%',
     },
     inputStyle: {
-        padding: 8,
-        width: '60%',
+        padding: 12,
+        width: '100%',
         borderWidth: 1,
-        borderRadius: 4,
-        borderColor: '#16213e',
+        borderRadius: 6,
+        borderColor: '#cad5e2',
+        backgroundColor: '#f9fafb',
+        color: '#333',
+        fontSize: 16,
     },
     errorText: {
         fontSize: 12,
-        color: '#ff0d10',
+        color: '#e63946',
+        marginTop: 4,
     },
     formActions: {
         flexDirection: 'row',
-        justifyContent: 'center',
+        justifyContent: 'space-between',
+        marginTop: 20,
     },
     primaryBtn: {
-        width: 120,
-        padding: 10,
-        borderRadius: 8,
+        width: '45%',
+        padding: 14,
+        borderRadius: 6,
         marginHorizontal: 8,
-        backgroundColor: '#5DA3FA',
+        backgroundColor: '#1e90ff',
+        shadowColor: '#1e90ff',
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.3,
+        shadowRadius: 4,
     },
     primaryBtnTxt: {
         color: '#fff',
         textAlign: 'center',
-        fontWeight: '700',
+        fontWeight: 'bold',
+        fontSize: 16,
     },
     secondaryBtn: {
-        width: 120,
-        padding: 10,
-        borderRadius: 8,
+        width: '45%',
+        padding: 14,
+        borderRadius: 6,
         marginHorizontal: 8,
-        backgroundColor: '#CAD5E2',
+        backgroundColor: '#f0f4f7',
+        borderWidth: 1,
+        borderColor: '#cad5e2',
     },
     secondaryBtnTxt: {
         textAlign: 'center',
+        fontWeight: 'bold',
+        fontSize: 16,
+        color: '#748a9d',
     },
     card: {
-        padding: 12,
-        borderRadius: 6,
-        marginHorizontal: 12,
+        padding: 16,
+        borderRadius: 8,
+        marginHorizontal: 16,
+        backgroundColor: '#ffffff',
+        elevation: 2,
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.1,
+        shadowRadius: 4,
     },
     cardElevated: {
         backgroundColor: '#ffffff',
-        elevation: 1,
-        shadowOffset: {
-            width: 1,
-            height: 1,
-        },
+        elevation: 4,
         shadowColor: '#333',
-        shadowOpacity: 0.2,
-        shadowRadius: 2,
+        shadowOpacity: 0.3,
+        shadowRadius: 4,
     },
     generatedPassword: {
         fontSize: 22,
         textAlign: 'center',
         marginBottom: 12,
-        color: '#000'
+        color: '#1e90ff',
+        fontWeight: 'bold',
     },
     CheckBox: {
         width: 24,
@@ -327,7 +364,9 @@ const styles = StyleSheet.create({
         marginRight: 10,
         alignItems: 'center',
         justifyContent: 'center',
-    }
+        backgroundColor: '#f9fafb',
+    },
+
 });
 
 export default SignUpScreen;

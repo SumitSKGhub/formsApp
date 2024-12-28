@@ -54,7 +54,6 @@ npm install @react-navigation/native react-native-screens react-native-safe-area
 
 npm install @react-navigation/stack
 
-npm install @react-native-async-storage/async-storage
 
 
 ## Step 3: Modifying your App
