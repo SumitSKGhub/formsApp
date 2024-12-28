@@ -50,10 +50,9 @@ const LoginScreen = ({ navigation }: any) => {
                         validationSchema={validate}
                         onSubmit={(values) => {
                             console.log('Submitted: ', values);
-                            // showAlert()
                             Alert.alert(
                                 'Welcome!',
-                                'Sign up was successful.');
+                                'Login successful.');
                         }
 
                         }
@@ -67,10 +66,8 @@ const LoginScreen = ({ navigation }: any) => {
                             handleSubmit,
                             handleBlur,
                             handleReset,
-                            /* and other goodies */
                         }) => (
                             <View>
-
 
                                 <View style={styles.inputWrapper}>
                                     <View style={styles.inputColumn}>
@@ -86,10 +83,7 @@ const LoginScreen = ({ navigation }: any) => {
                                         style={styles.inputStyle}
                                         value={values.email}
                                         onChangeText={handleChange('email')}
-                                        // onBlur={handleBlur('email')}
                                         placeholder="example@mail.com"
-                                    //keyboardType="numeric"
-
                                     />
                                 </View>
 
@@ -107,27 +101,32 @@ const LoginScreen = ({ navigation }: any) => {
                                         style={styles.inputStyle}
                                         value={values.password}
                                         onChangeText={handleChange('password')}
-                                        //onBlur={handleBlur('password')}
                                         placeholder="password123$%^"
                                     //keyboardType="numeric"
 
                                     />
                                 </View>
 
-                                <View style={styles.inputWrapper}></View>
-                                <View style={styles.inputWrapper}></View>
-                                <View style={styles.inputWrapper}></View>
 
                                 <View style={styles.formActions}>
 
-                                    <Button
+                                    {/* <Button
                                         title="Submit"
                                         style={styles.primaryBtn}
                                         onPress={() => { handleSubmit() }}
                                     >
+                                    </Button> */}
 
-                                    </Button>
-
+                                    <TouchableOpacity
+                                        disabled={!isValid}
+                                        style={styles.primaryBtn}
+                                        onPress={() => {
+                                            console.log(values)
+                                            handleSubmit()
+                                        }}
+                                    >
+                                        <Text style={styles.primaryBtnTxt}>Submit</Text>
+                                    </TouchableOpacity>
 
                                     <TouchableOpacity
                                         style={styles.secondaryBtn}
@@ -147,7 +146,8 @@ const LoginScreen = ({ navigation }: any) => {
                                             navigation.navigate('SignUp')
                                         }}
                                     >
-                                        <Text >Click here.</Text></TouchableOpacity>
+                                        <Text style={{color:'#1e90ff'}}>Click here.</Text>
+                                    </TouchableOpacity>
                                 </View>
                             </View>
 
@@ -155,8 +155,8 @@ const LoginScreen = ({ navigation }: any) => {
                     </Formik>
                 </View>
 
-            </SafeAreaView>
-        </ScrollView>
+            </SafeAreaView >
+        </ScrollView >
     )
 }
 

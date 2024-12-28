@@ -57,7 +57,6 @@ const SignUpScreen = ({ navigation }: any) => {
                                 'Welcome!',
                                 'Sign up was successful.');
                         }
-
                         }
                     >
                         {({
@@ -163,26 +162,22 @@ const SignUpScreen = ({ navigation }: any) => {
                                     <CheckBox
                                         title="Remember me"
                                         checked={isChecked}
+                                        style={styles.CheckBox}
                                         onPress={() => { setIsChecked(!isChecked) }}
                                     />
                                 </View>
 
-
-                                <View style={styles.inputWrapper}></View>
-                                <View style={styles.inputWrapper}></View>
-                                <View style={styles.inputWrapper}></View>
-
                                 <View style={styles.formActions}>
 
-                                    <Button
+                                    {/* <Button
                                         title="Submit"
                                         style={styles.primaryBtn}
                                         onPress={() => { handleSubmit() }}
                                     >
 
-                                    </Button>
+                                    </Button> */}
 
-                                    {/* <TouchableOpacity
+                                    <TouchableOpacity
                                         disabled={!isValid}
                                         style={styles.primaryBtn}
                                         onPress={() => {
@@ -190,7 +185,7 @@ const SignUpScreen = ({ navigation }: any) => {
                                             handleSubmit()
                                         }}
                                     >
-                                        <Text style={styles.primaryBtnTxt}>Submit</Text></TouchableOpacity> */}
+                                        <Text style={styles.primaryBtnTxt}>Submit</Text></TouchableOpacity>
                                     <TouchableOpacity
                                         style={styles.secondaryBtn}
                                         onPress={() =>
@@ -209,7 +204,7 @@ const SignUpScreen = ({ navigation }: any) => {
                                             navigation.navigate('Login')
                                         }}
                                     >
-                                        <Text >Click here.</Text></TouchableOpacity>
+                                        <Text style={{color:'#1e90ff'}}>Click here.</Text></TouchableOpacity>
                                 </View>
                             </View>
 

@@ -47,16 +47,21 @@ If everything is set up _correctly_, you should see your new app running in your
 This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
 
 
-## Add dependancies
+## Step 3: Add dependancies
+
 npm install react-native-elements
+
+npm install react-native-vector-icons
 
 npm install @react-navigation/native react-native-screens react-native-safe-area-context react-native-gesture-handler react-native-reanimated react-native-vector-icons
 
 npm install @react-navigation/stack
 
+npm install - hitting this command in the terminal often solves problems.
 
 
-## Step 3: Modifying your App
+
+## Step 4: Modifying your App
 
 Now that you have successfully run the app, let's modify it.
 
