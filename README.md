@@ -51,9 +51,7 @@ This is one way to run your app — you can also run it directly from within And
 
 npm install react-native-elements
 
-npm install react-native-vector-icons
-
-npm install @react-navigation/native react-native-screens react-native-safe-area-context react-native-gesture-handler react-native-reanimated react-native-vector-icons
+npm install @react-navigation/native react-native-screens react-native-safe-area-context react-native-gesture-handler react-native-reanimated
 
 npm install @react-navigation/stack
 
